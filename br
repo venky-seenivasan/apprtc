@@ -1,0 +1,6 @@
+rm -rf out/*
+#conda activate python2
+grunt build --force
+#/Users/seeve01/work/code/google-cloud-sdk/platform/google_appengine/dev_appserver.py /Users/seeve01/work/code/apprtc/out/app_engine/.
+cd out/app_engine
+gcloud app deploy --project fundue-rtc

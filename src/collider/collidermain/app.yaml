@@ -1,0 +1,14 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+  secure: always
+
+env_variables:
+  BYPASS_JOIN_CONFIRMATION: false
+  # Only change these while developing, do not commit to source!
+  # Use appcfg.py --env_variable=ICE_SERVER_API_KEY:KEY \
+  # in order to replace variables when deploying.
+  ICE_SERVER_API_KEY: none
